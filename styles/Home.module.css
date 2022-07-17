@@ -2,6 +2,39 @@
   padding: 0 2rem;
 }
 
+.header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 30px 10px;
+}
+
+.nav ul{
+  display: flex;
+  align-items: baseline;
+
+
+}
+
+.nav ul li {
+  margin: 15px;
+}
+
+
+@media only screen and (max-width:450px) {
+
+  .logo{
+    display: none;
+  }
+
+
+
+
+}
+
+
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from './../../components/Ui/Layout';
 
 const MovieIdPage = () => {
   return (
-    <div>MovieIdPage</div>
+    <Layout>MovieIdPage</Layout>
   )
 }
 

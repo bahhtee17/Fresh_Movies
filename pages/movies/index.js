@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from './../../components/Ui/Layout';
 
 const MoviesListPage = () => {
   return (
-    <div>MoviesListPage</div>
+    <Layout>MoviesListPage</Layout>
   )
 }
 

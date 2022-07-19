@@ -6,7 +6,7 @@ const MovieList = (props) => {
 //<MovieItem poster={props.poster} title={props.title} releaseDate={props.releaseDate}/>
   return (
     <>
-      {props.movies.map((movie) => { return <MovieItem key={movie.id} poster={movie.poster_path} title={movie.original_title} releaseDate={movie.release_date}/>})}
+      {props.movies.map((movie) => { return <MovieItem key={movie.id} poster={movie.poster_path} title={movie.original_title} releaseDate={movie.release_date} />})}
     </>
   )
 }

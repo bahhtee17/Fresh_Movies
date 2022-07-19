@@ -6,7 +6,7 @@ const MoviesListPage = ({data}) => {
   const [movies, setMovies] = useState(data.results)
   console.log(movies)
   return (
-    <Layout>
+    <Layout title={"Movies"}>
       <MovieList movies={movies} />
     </Layout>
   )

@@ -1,0 +1,33 @@
+.container{
+    padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EFF8F3;
+  margin: 5%;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+}
+
+.poster{
+padding: 0 20px;
+}
+
+.details{
+    padding: 0 20px;
+}
+
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color:#285D3D;
+
+
+}
+
+.details p {
+    color: #285D3D;
+}

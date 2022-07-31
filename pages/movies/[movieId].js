@@ -31,6 +31,9 @@ useEffect(() => {
     const res = await Axios.get(`https://api.themoviedb.org/3/movie/${query}/videos?api_key=a744e90192258110f06f7ef476ad1c88`)
     const data = await res.data;
    setVideoData(data.results)
+   const castData = await Axios.get(`https://api.themoviedb.org/3/movie/${query}/credits?api_key=a744e90192258110f06f7ef476ad1c88`)
+   const credits = await castData.data;
+   console.log(credits)
   }
 
  fetchHandler()

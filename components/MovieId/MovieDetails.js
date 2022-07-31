@@ -5,11 +5,16 @@ import {BsFillStarFill} from "react-icons/bs"
 import YouTube from 'react-youtube'
 /*
 
-    <div>
-        <p>{props.overview}</p>
-    </div>
 
-    <div>
+
+    */
+
+    //https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key=a744e90192258110f06f7ef476ad1c88
+    //https://api.themoviedb.org/3/movie/297762?api_key=a744e90192258110f06f7ef476ad1c88&append_to_response=videos
+const MovieDetails = (props) => {
+
+
+/* <div>
         <div>
             <Image src={props.castPhoto} width={100} height={150}/>
         </div>
@@ -18,13 +23,6 @@ import YouTube from 'react-youtube'
             <h2>{props.characterName}</h2>
         </div>
     </div>*/
-
-    //https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>
-    //https://api.themoviedb.org/3/movie/297762?api_key=a744e90192258110f06f7ef476ad1c88&append_to_response=videos
-const MovieDetails = (props) => {
-
-
-
 
 
     const opts = {
@@ -47,7 +45,7 @@ const MovieDetails = (props) => {
     <div className={classes.details}>
         <div>
             <h1 className={classes.title}>{props.title}</h1>
-            <h3 className={classes.date}>{props.release_date}</h3>
+            <h3 className={classes.date}>Release Date: {props.release_date}</h3>
         </div>
         <div>
              <BsFillStarFill color='#285D3D' width={150} height={150}/>
@@ -61,13 +59,17 @@ const MovieDetails = (props) => {
 
         </div>
 
-
-
         <div>
           <YouTube className={classes.video} videoId={props.video} opts={opts} onReady={onPauseHandler}/>
         </div>
 
     </div>
+
+    <div>
+        <p className={classes.paragraph}>Overview: {props.overview}</p>
+    </div>
+
+
 
   </div>
   )

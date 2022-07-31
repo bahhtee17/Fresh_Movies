@@ -15,25 +15,26 @@
 .title{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
+    font-weight: 100;
     letter-spacing: 0.1em;
-    color:#285D3D;
+    color:#2C365E;
 
 }
 
 .date{
-    color: #285D3D;
+    color: #2C365E;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .media{
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 20px 50px;
+    background-color: #F7F7F8;
+    align-items: center;
 }
 
-.video{
-    max-width: 1200px;
-    height: 900px;
-}
+
 
 @media screen and (max-width: 1000px)
 {
@@ -48,4 +49,12 @@
         display: none;
     }
 
+}
+
+.paragraph{
+    text-align: center;
+    color: #2C365E;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 30px 10px;
 }

@@ -50,7 +50,7 @@ useEffect(() => {
 //
   return (
     <Layout title={"Movie"}>
-      {movie && videoData ? <MovieDetails overview={movie.overview} video={videoData[0].key} key={movie.id}  title={movie.original_title} release_date={movie.release_date} rate={movie.vote_average} poster_path={movie.poster_path}/> : <p>Loading...</p>}
+      {movie && videoData ? <MovieDetails overview={movie.overview} video={videoData[1].key} key={movie.id}  title={movie.original_title} release_date={movie.release_date} rate={movie.vote_average} poster_path={movie.poster_path}/> : <p>Loading...</p>}
 
     </Layout>
   )

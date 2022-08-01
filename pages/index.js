@@ -4,32 +4,40 @@ import { useState } from 'react';
 import  Axios from "axios"
 import Button from "../components/Ui/Button";
 import MainPageItem from "../components/MainPageItem";
+import Link from "next/link";
 
 
 
 export default function Home({data}) {
 const [items, setItems] = useState(data.results)
-const [randomValue, setRandomValue] = useState()
+const [randomValue, setRandomValue] = useState([])
 const [isClicked, setIsClicked] = useState(false)
-console.log(items.length)
+
 
 const generateRandomMovie = () => {
   const randomIndex = Math.floor(Math.random() * items.length)
-  const getGeneratedValue = items[randomIndex].backdrop_path
-  setRandomValue(getGeneratedValue)
+
+  setRandomValue( items[randomIndex])
   setIsClicked(true)
-  console.log(getGeneratedValue)
+
+
+
 }
 
 
-console.log(randomValue)
+
 
   return (
 
     <Layout title="Home">
         <div className={classes.container}>
           <Button onClick={generateRandomMovie}>Generate</Button>
-         { isClicked ? <MainPageItem image={randomValue}/> : null}
+
+         { isClicked ? <Link href={`/movies/${randomValue.id}`}>
+           <a>
+             <MainPageItem image={randomValue.backdrop_path}/>
+           </a>
+  </Link>: null}
         </div>
     </Layout>
 

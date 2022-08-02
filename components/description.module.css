@@ -10,16 +10,19 @@
     font-family: 'Indie Flower', cursive;
     font-size: 2em;
     width: 50%;
+    color: #2C365E;
 }
 
 .paragraphTwo p{
     font-family: 'Shadows Into Light', cursive;
     font-size:2em;
+    color: #2C365E;
 
 }
 
 .paragraph{
     padding-left: 15%;
+    display: flex;
 
 }
 
@@ -28,3 +31,6 @@
     padding-left: 50%;
 }
 
+.mainword{
+    color: #032041;
+}

@@ -15,7 +15,8 @@ const Layout = (props) => {
       </Head>
       <header className={styles.header}>
         <div className={styles.logo}>
-            <Image src={logo} width={120} height={70}/>
+          <Link href={"/"}><a><Image src={logo} width={120} height={70}/></a></Link>
+
         </div>
 
         <nav className={styles.nav}>

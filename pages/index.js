@@ -5,6 +5,7 @@ import  Axios from "axios"
 import Button from "../components/Ui/Button";
 import MainPageItem from "../components/MainPageItem";
 import Link from "next/link";
+import Description from "../components/Description";
 
 
 
@@ -31,6 +32,7 @@ const generateRandomMovie = () => {
 
     <Layout title="Home">
         <div className={classes.container}>
+          <Description/>
           <Button onClick={generateRandomMovie}>Generate</Button>
 
          { isClicked ? <Link href={`/movies/${randomValue.id}`}>

@@ -39,6 +39,7 @@ const generateRandomMovie = () => {
            <a>
              <MainPageItem image={randomValue.backdrop_path}/>
            </a>
+
   </Link>: null}
         </div>
     </Layout>

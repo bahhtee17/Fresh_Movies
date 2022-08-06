@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+.container{
+
+    color: #2C365E;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
